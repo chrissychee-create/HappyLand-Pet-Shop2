@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyLand Pet Shop - Grooming & Boarding in IJM Rimbayu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff; /* Blue */
+            --secondary-color: #ffc107; /* Yellow */
+            --text-color: #333;
+            --bg-light: #f8f9fa;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color) !important; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600/6c757d/ffffff?text=HappyLand+Pet+Shop+IJM+Rimbayu');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+        }
+        .section-padding { padding: 60px 0; }
+        .pricing-card { transition: transform 0.3s; border: none; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        .pricing-card:hover { transform: translateY(-5px); }
+        .feature-icon { color: var(--primary-color); font-size: 2rem; margin-bottom: 15px; }
+        .video-embed-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .video-embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">🐾 HappyLand Pet Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Grooming Subscriptions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#boarding">Boarding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Care Tips</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Happy Pets, Happy Owners</h1>
+            <p class="lead mb-4">Your trusted source for pet grooming and boarding in **IJM Rimbayu**.</p>
+            <a href="#services" class="btn btn-warning btn-lg me-2">Explore Services</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Book an Appointment</a>
+        </div>
+    </header>
+
+    <section id="services" class="section-padding">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Premium Pet Care Services</h2>
+            <p class="lead mb-5">We provide professional grooming and safe boarding for your beloved cats and dogs.</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <i class="feature-icon bi bi-scissors"></i> <h3 class="h4">Subscription Grooming</h3>
+                        <p>Keep your pet looking and feeling their best year-round with our cost-saving monthly plans.</p>
+                        <a href="#pricing" class="btn btn-sm btn-outline-primary">View Plans</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <i class="feature-icon bi bi-house-door"></i> <h3 class="h4">Comfortable Boarding</h3>
+                        <p>Safe and caring accommodation for your cats and dogs at **RM80 per night**.</p>
+                        <a href="#boarding" class="btn btn-sm btn-outline-primary">Book Stay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Grooming Subscription Offers</h2>
+            <p class="lead mb-5">Save more with monthly grooming. All prices are inclusive of one session per month.</p>
+            
+            <div class="row justify-content-center">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card card h-100">
+                        <div class="card-header bg-secondary text-white fw-bold">Trial Subscription</div>
+                        <div class="card-body">
+                            <h4 class="card-title">RM660</h4>
+                            <p class="card-text text-muted">Total Cost</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> **3 Months** (Once a month)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Great for new customers</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Standard grooming included</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary w-100">Start Trial Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card card h-100">
+                        <div class="card-header bg-primary text-white fw-bold">6 Months Subscription</div>
+                        <div class="card-body">
+                            <h4 class="card-title">RM1,200</h4>
+                            <p class="card-text text-muted">Total Cost</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> **6 Months** (Once a month)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Discounted monthly rate</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority booking access</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary w-100">Select 6 Months</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card card h-100 border-primary border-3">
+                        <div class="card-header bg-primary text-white fw-bold">Annual Subscription (Best Value)</div>
+                        <div class="card-body">
+                            <h4 class="card-title">RM1,800</h4>
+                            <p class="card-text text-muted">Total Cost</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> **12 Months** (Once a month)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Heaviest discount applied</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Free birthday treat/upgrade</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-warning w-100 fw-bold">Choose Annual</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="boarding" class="section-padding">
+        <div class="container text-center">
+            <h2 class="mb-4">Safe & Cozy Pet Boarding</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="p-5 border rounded bg-light">
+                        <h3 class="text-primary">Boarding Rate: **RM80 per night**</h3>
+                        <p class="lead">We offer secure, comfortable, and air-conditioned accommodation for both **cats and dogs**.</p>
+                        <p>Your pet will receive individual attention, scheduled playtimes, and regular feeding. Located conveniently in IJM Rimbayu, we are the perfect home-away-from-home when you travel.</p>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg mt-3">Check Boarding Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">📹 Pet Care Tips & Grooming Video Series</h2>
+            <p class="text-center lead mb-4">Access our series of expert videos on pet grooming techniques, health tips, and home care routines.</p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">Video 1: Basic Dog Bathing Techniques</h5>
+                    <div class="video-embed-container shadow">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">Video 2: Nail Clipping Made Easy (Cat & Dog)</h5>
+                    <div class="video-embed-container shadow">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A-y1v7Rk18w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-4">Visit our full video library for more resources!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Appointments & Enquiries</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h4 class="text-primary">Ready to Book?</h4>
+                            <p>For immediate scheduling of grooming sessions or boarding stays, please use our online booking system:</p>
+                            <a href="https://calendly.com/your-happyland-booking" target="_blank" class="btn btn-warning btn-lg mb-3">
+                                🗓️ **Click Here to Schedule Online**
+                            </a>
+                            <p class="mt-4">Located at: **IJM Rimbayu, Selangor**</p>
+                            <p>Phone: **[Your Phone Number Here]**</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-primary">General Enquiries</h4>
+                            <form name="enquiry" method="POST" data-netlify="true" action="/success">
+                                <input type="hidden" name="form-name" value="enquiry" />
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="General Question">General Question</option>
+                                        <option value="Subscription Inquiry">Subscription Inquiry</option>
+                                        <option value="Boarding Check">Boarding Check</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
+                            </form>
+                            <p class="small text-muted mt-2">*(Form submissions handled free by Netlify)*</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 HappyLand Pet Shop, IJM Rimbayu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple JS to handle active navigation link on scroll (optional)
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Smooth scrolling implementation (optional, built into Bootstrap 5 scrollspy)
+                    // e.preventDefault();
+                    // document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    //     behavior: 'smooth'
+                    // });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
